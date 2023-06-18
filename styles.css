@@ -1,4 +1,4 @@
-/*General styles*/
+/* General styles */
 * {
     margin: 0;
     padding: 0;
@@ -49,8 +49,7 @@ body {
     margin-bottom: 15px;
 }
 
-@media screen and (max-width: 576px) {
-
+@media screen and (width <= 576px) {
     .main-info,
     .contact_info_container {
         flex-direction: column;
@@ -70,7 +69,7 @@ body {
 }
 
 
-/*Contact info styles*/
+/* Contact info styles */
 .contact-info__header,
 .contact-info__sub-header {
     text-align: center;
@@ -106,7 +105,7 @@ body {
 }
 
 .contact-info__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-info__item-icon-wrapper {
@@ -121,20 +120,19 @@ body {
 }
 
 .contact-info__item-icon {
-    height: 1.1428rem;
+    height: 1.2rem;
     vertical-align: text-bottom;
 }
 
 .contact-info__avatar {
-    border-radius: 50%;
+    border-radius: 30%;
     width: 100px;
     height: 100px;
-    object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
 }
 
-/*Intro and skills styles*/
+/* Intro and skills styles */
 .intro {
     display: flex;
     justify-content: start;
@@ -172,7 +170,7 @@ body {
     text-align: justify;
 }
 
-/*Experience and additional info styles*/
+/* Experience and additional info styles */
 .experiences {
     flex: 1 1 60%;
     margin-right: 50px;
@@ -192,9 +190,8 @@ body {
 }
 
 .experiences__company-header-name {
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color);
     text-decoration-color: var(--text-decoration-color);
-    text-decoration-line: underline;
     text-align: left;
     margin-bottom: 20px;
 }
